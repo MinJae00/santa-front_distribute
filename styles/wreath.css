@@ -1,0 +1,165 @@
+.wreath_back {
+    width: 332px;
+    height: 714px;
+    display: flex;
+    background-color: #990000;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 24px;
+}
+
+.wreath_edit_back {
+    width: 332px;
+    height: 414px;
+    display: flex;
+    background-color: #D63E3E;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 24px;
+}
+
+.wreath_edit_orna_group {
+    width: 297px;
+    height: 312px;
+    display: flex;
+    background-color: #E17070;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.wreath_edit_center {
+    width: 267px;
+    height: 253px;
+    /* top: 138px; */
+    top: 180px;
+    left: 20px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+}
+
+.wreath_edit_orna_box {
+    width: 83px;
+    height: 86px;
+    display: flex;
+    background-color: #A33333;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 11px;
+}
+
+.wreath_head {
+    position: absolute;
+    height: 20px;
+    width: 197px;
+    top: 81px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.wreath_x_btn {
+    color : white;
+    position: absolute;
+    display: flex;
+    top: 30px;
+    left: 26px;
+    bottom: 679px;
+    margin: 0;
+}
+
+.wreath_save_btn {
+    position: absolute;
+    width: 62px;
+    height: 21px;
+    top: 18px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 10.5px;
+}
+
+.wreath_center {
+    width: 267px;
+    height: 253px;
+    top: 138px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+}
+
+.wreath_christmas_text {
+    position: absolute;
+    top: 110px;
+}
+
+.wreath_orna_q1 {
+    position: absolute;
+    top: 35px;
+    left: 27px;
+}
+
+.wreath_orna_q2 {
+    position: absolute;
+    top: -5px;
+    left: 110px;
+}
+
+.wreath_orna_q3 {
+    position: absolute;
+    top: 41px;
+    left: 191px;
+}
+
+.wreath_orna_q4 {
+    position: absolute;
+    top: 113px;
+    left: 200px;
+}
+
+.wreath_orna_q5 {
+    position: absolute;
+    top: 173px;
+    left: 146px;
+}
+
+.wreath_orna_q6 {
+    position: absolute;
+    top: 173px;
+    left: 70px;
+}
+
+.wreath_orna_q7 {
+    position: absolute;
+    top: 113px;
+    left:15px;
+}
+
+.wreath_orna_group {
+    width: 297px;
+    height: 282px;
+    top: 413px;
+    display: flex;
+    background-color: #871C1C;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 19px;
+}
+
+.wreath_orna_box {
+    width: 83px;
+    height: 86px;
+    display: flex;
+    background-color: #A33333;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 11px;
+}
+

@@ -1,0 +1,541 @@
+.socks_back {
+    width: 335px;
+    height: 624px;
+    display: flex;
+    background-color: #D95252;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 22px;
+}
+
+.socks_back2 {
+    width: 320px;
+    height: 609px;
+    display: flex;
+    background-color: #BD2E2E;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 14px;
+    margin: 8px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='14' ry='14' stroke='white' stroke-width='2' stroke-dasharray='10' stroke-dashoffset='13' stroke-linecap='round'/%3e%3c/svg%3e");
+    border-radius: 14px;
+}
+
+.socks_flower {
+    position: absolute;
+    top: -44px;
+    left: 12px;
+}
+
+.socks_head {
+    position: absolute;
+    height: 20px;
+    width: 174px;
+    top: 73px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.socks_img {
+    position: absolute;
+    top: -83px;
+    transform: rotate(5deg);
+}
+
+.socks_img2 {
+    position: absolute;
+    top: -83px;
+    transform: scaleX(-1) rotate(-20deg);
+}
+
+.socks_img3 {
+    position: absolute;
+    top: -83px;
+    transform: rotate(20deg);
+}
+
+.socks_giftImg {
+    display: flex;
+    align-items: center;
+}
+
+.socks_center {
+    width: 234px;
+    height: 214px;
+    top: 193px;
+    display: flex;
+    background-color: #BD2E2E;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    border: 10px solid #9BAFFF;
+    border-radius: 30px;
+}
+
+.socks_center2 {
+    width: 234px;
+    height: 214px;
+    top: 193px;
+    display: flex;
+    background-color: #BD2E2E;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    border: 10px solid #EC3838;
+    border-radius: 30px;
+}
+
+.socks_center3 {
+    width: 234px;
+    height: 214px;
+    top: 193px;
+    display: flex;
+    background-color: #BD2E2E;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    border: 10px solid #548A87;
+    border-radius: 30px;
+}
+
+.socks_giftName {
+    position: absolute;
+    height: 23px;
+    width: 169px;
+    top: 458px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.socks_eyeNview {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    width: 169px;
+    height: 23px;
+    top: 479px;
+}
+
+.socks_eye {
+    top: 530px;
+    left: 340px;
+    display: flex;
+    color: white;
+    font-size: 18px;
+}
+
+.socks_view {
+    top: 530px;
+    left: 375px;
+    margin-left: 8px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.socks_closeBtn {
+    width: 262px;
+    height: 49px;
+    bottom: 30px;
+    display: flex;
+    background-color: #8F1717;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 16px;
+}
+
+.socks_closeWord {
+    font-size: 21px;
+    color: white;
+    text-align: center;
+}
+
+.x-btn {
+    color : white;
+    position: absolute;
+    display: flex;
+    top: 30px;
+    right: 25px;
+    bottom: 681px;
+    margin: 0;
+}
+
+.socks_none {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.socks_teong {
+    width: 89px;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+.socks_worry {
+    width: 143px;
+    height: 13px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* 여기서부터 socksEdit */
+.socks_edit_back {
+    width: 340px;
+    height: 640px;
+    display: flex;
+    background-color: #BD2E2E;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 19px;
+}
+
+.edit_x-btn {
+    color : white;
+    position: absolute;
+    display: flex;
+    top: 20px;
+    right: 25px;
+    bottom: 681px;
+    margin: 0;
+}
+
+/* @media (min-height: 781px) {
+    .socks_edit_back {
+        height: 781px;
+    }
+} */
+
+.socks_edit {
+    position: absolute;
+    top: 25px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.socks_edit_socks {
+    top: 49px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+}
+
+.socks_edit_line {
+    position: absolute;
+    width: 207.11px;
+    height: 28.44px;
+}
+
+.socks_edit1 {
+    position: absolute;
+    width: 224px;
+    height: 118.22px;
+    top: 11px;
+    margin-left: 20px;
+}
+
+.socks_edit_box1 {
+    width: 290px;
+    height: 127.37px;
+    top: 107px;
+    display: flex;
+    background-color: #D35555;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 18px;
+}
+
+.socks_edit_box1_inner {
+    width: 280px;
+    height: 117.37px;
+    top:5px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    background-color: #C64C4C;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='13' ry='13' stroke='%23FFA9A9FF' stroke-width='2' stroke-dasharray='6' stroke-dashoffset='20' stroke-linecap='round'/%3e%3c/svg%3e");
+    border-radius: 13px;
+}
+
+.socks_edit_box2 {
+    width: 290px;
+    height: 127.37px;
+    top: 249px;
+    display: flex;
+    background-color: #D35555;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 18px;
+}
+
+.socks_edit_box2_inner {
+    width: 280px;
+    height: 117.37px;
+    top:5px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    background-color: #C64C4C;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='13' ry='13' stroke='%23FFA9A9FF' stroke-width='2' stroke-dasharray='6' stroke-dashoffset='20' stroke-linecap='round'/%3e%3c/svg%3e");
+    border-radius: 13px;
+}
+
+.socks_edit_box3 {
+    width: 290px;
+    height: 127.37px;
+    top: 391px;
+    display: flex;
+    background-color: #D35555;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 18px;
+}
+
+.socks_edit_box3_inner {
+    width: 280px;
+    height: 117.37px;
+    top:5px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    background-color: #C64C4C;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='13' ry='13' stroke='%23FFA9A9FF' stroke-width='2' stroke-dasharray='6' stroke-dashoffset='20' stroke-linecap='round'/%3e%3c/svg%3e");
+    border-radius: 13px;
+}
+
+.socks_edit_smSocks {
+    position: absolute;
+    left: 22px;
+    top: 20px;
+    display: flex;
+}
+
+.socks_edit_img1 {
+    transform: rotate(5deg);
+}
+
+.socks_edit_img2 {
+    transform: scaleX(-1) rotate(-20deg);
+}
+
+.socks_edit_img3 {
+    transform: rotate(20deg);
+}
+
+.socks_edit_text {
+    position: absolute;
+    width: 121px;
+    height: 17px;
+    left: 40px;
+    top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.socks_edit_picBox {
+    position: absolute;
+    width: 74.58px;
+    height: 67.39px;
+    top: 16px;
+    left: 221px;
+    display: flex;
+    background-color: #FF929D;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 6px;
+}
+
+.socks_edit_noneBox {
+    position: absolute;
+    width: 215px;
+    height: 195px;
+    top: -0.2%;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 20px;    
+}
+
+.socks_edit_noneBox2 {
+    position: absolute;
+    width: 62px;
+    height: 21px;
+    top: 87px;
+    right: 20px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 100px;    
+}
+
+.socks_edit_reg {
+    position: absolute;
+    top: 30px;
+    color: #791818; 
+    font-size: 11px;
+    text-align: center;
+}
+
+.socks_edit_giftImg {
+    position: absolute;
+    top: 0px;
+}
+
+.socks_edit_giftName {
+    position: absolute;
+    width: 39px;
+    height: 15px;
+    left: 20px;
+    top: 73px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+input::placeholder {
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.socks_edit_textBox1 {
+    position: absolute;
+    width: 116.82px;
+    height: 19.77px;
+    top: 70px;
+    left: 60px;
+    display: flex;
+    background-color: #6584FF;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12px;
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.socks_edit_textBox2 {
+    position: absolute;
+    width: 116.82px;
+    height: 19.77px;
+    top: 70px;
+    left: 60px;
+    display: flex;
+    background-color: #C21111;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12px;
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.socks_edit_textBox3 {
+    position: absolute;
+    width: 116.82px;
+    height: 19.77px;
+    top: 70px;
+    left: 60px;
+    display: flex;
+    background-color: #548A87;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12px;
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.socks_edit_giftNameText {
+    position: absolute;
+    width: 100.82px;
+    height: 19.77px;
+    left: 10px;
+    top: 3px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.socks_edit_ImgChg{
+    position: absolute;
+    width: 62px;
+    height: 21px;
+    top: 75px;
+    left: 5px;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 10.5px;
+}
+
+.socks_edit_ImgChgText {
+    position: absolute;
+    font-size: 11px;
+    line-height: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    top: 5px;
+    left: 10px;
+}
+
+.socks_edit_closeBtn {
+    width: 200px;
+    height: 35px;
+    top: 585px;
+    display: flex;
+    background-color: black;
+    position: absolute;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 16px;
+}
+
+.socks_edit_closeWord {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.socks_edit_closeSanta {
+    position: absolute;
+    width: 56px;
+    height: 58px;
+    left: 65px;
+    top: 575px;
+}

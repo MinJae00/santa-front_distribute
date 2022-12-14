@@ -1,0 +1,106 @@
+.back-btn{
+    position: absolute;
+	transform: translate( -50%, -50% );
+    text-align:center;
+}
+
+.day-text{
+    text-align:center;
+    justify-content : center;
+    align-items : center;
+}
+
+.hint-btn{ 
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align:center;
+    justify-content : center;
+    align-items : center;
+}
+
+.hint-btn-img{
+    padding-right: 110px;
+    text-align:center;
+}
+
+.letter-wrapper {
+    align-items: center;
+    justify-content: center;
+    text-align : center;
+}
+
+.letter-img {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align : center;
+}
+
+.letter-text1 {
+    position : absolute;
+    width : 250px;
+    align-items: center;
+    justify-content: center;
+    text-align : center;
+}
+
+.quiz_answer {
+    margin: 40px auto 210px auto;
+    border-radius: 40px;
+    background: transparent;
+    position: relative;
+}
+
+.quiz_input {
+    width: 215px;
+    height: 20px;
+    padding: 20px 15px;
+    float: left;
+    border: 0;
+    border-radius: 40px;
+    border-top-style: none;
+    color: black;
+    background: #D3D3D3;
+}
+
+.submit {
+    overflow: visible;
+    position: absolute;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 72px;
+    color: #fff;
+    text-transform: lowercase;
+    background: black;
+    border-radius: 40px;
+    right: 0px;
+    -webkit-tap-highlight-color : transparent !important;
+}  
+.rd-arrive {
+    transform: translate( -10%, 220% );
+    padding-right: 138px;
+}
+
+.rd-arrive-btn {
+    color: white;
+    background: black;
+    width: 250px;
+    text-align:center;
+    justify-content : center;
+    align-items : center;
+}
+
+.arrive-btn-img{
+    text-align:center;
+    transform: translate( -53%, -30% );
+}
+
+.reindeer1 {
+    position: absolute;
+    left: 50%;
+	transform: translate( -50%, -50% );
+    text-align:center;
+}

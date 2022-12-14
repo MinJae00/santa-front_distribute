@@ -1,0 +1,133 @@
+.img-wrapper {
+  letter-spacing: 0;
+  word-spacing: 0;
+  font-size: 0;
+}
+
+.door-top {
+	position: absolute;
+	top: 44%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+    text-align:center;
+}
+
+.sock-1{
+	position: absolute;
+	top: 180%;
+	left: 25%;
+	transform: translate( -50%, -50% );
+    text-align:center;
+}
+
+.sock-2{
+	position: absolute;
+	top: 200%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+    text-align:center;
+}
+
+.sock-3{
+	position: absolute;
+	top: 172%;
+	left: 75%;
+	transform: translate( -50%, -50% );
+    text-align:center;
+}
+
+.wreath-text{
+	position: absolute;
+	top: 68.5%;
+	left: 50%;
+	width: 100%;
+	transform: translate( -50%, -50% );
+  text-align:center;
+}
+
+.door-handle{
+	position: absolute;
+	top: 90%;
+	left: 10%;
+	width: 76px;
+	height: 103px;
+	transform: translate( -50%, -50% );
+    text-align:center;
+}
+
+.collection{
+	position: absolute;
+	width: 95px;
+	height: 131px;
+	top: 105%;
+	left: 86%;
+	transform: translate( -50%, -50% );
+    text-align:center;
+}
+
+.quiz-black{
+	position: absolute;
+	top: 32%;
+	left: 50%;
+	width: 191px;
+	height: 10px;
+	transform: translate( -50%, -50% );
+    text-align:center;
+}
+
+.quiz-white{
+	position: absolute;
+	top: 23%;
+	left: 50%;
+	width: 149px;
+	height: 40px;
+	transform: translate( -50%, -50% );
+  text-align:center;
+}
+
+.quiz-notification{
+	position: absolute;
+	top: 12%;
+	left: 72%;
+	width: 22px;
+	height: 22px;
+	transform: translate( -50%, -50% );
+  text-align:center;
+	padding-top: 2px;
+}
+
+.quiz-text{
+	position: absolute;
+	top: 24%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+  text-align:center;
+}
+
+.quiz-deco{
+	position: absolute;
+	top: 62%;
+	left: 52%;
+	width: 272px;
+	height: 89px;
+	transform: translate( -50%, -50% );
+  text-align:center;
+}
+
+.share-btm{
+	letter-spacing: 0;
+  word-spacing: 0;
+  font-size: 0;
+}
+
+.share-go-index {
+	position: absolute;
+  transform: translate( -50%, -50% );
+	text-align:center;
+}
+
+.grid-guide-1{
+	display: grid;
+	grid-template-columns: 20px 271px;
+	grid-template-rows: 33px 33px 33px 33px;
+}
