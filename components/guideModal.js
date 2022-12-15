@@ -58,7 +58,7 @@ const guideModal = ({ isVisible, onClose }) => {
 								획득한 오너먼트를 통해 크리스마스 리스를 꾸며보세요! 나만의 리스와 순록들도 공유링크를 통해 친구가 볼 수 있어요!
 							</div>
 							<div className="mt-[16px] text-[#282525] text-[10px]">
-								리스를 꾸미고 순록들을 모으면서 25일이 되기를 기다려볼까요! 이 방문 너머에는 무엇이 있을지 궁금하지 않나요? 
+								리스를 꾸미고 순록들을 찾으면서 기다리다 보면 크리스마스 당일엔 문손잡이가 열릴지도 몰라요! 🎁
 							</div>
 						</div>
 					</div>
@@ -92,7 +92,7 @@ const guideModal = ({ isVisible, onClose }) => {
 						</div>
 					</div>
 
-					<div className="right-0 top-[85.95%] absolute"><Image src="/img/share/package_btm.png" width={126} height={74.16}/></div>
+					<div className="right-0 top-[86%] absolute"><Image src="/img/share/package_btm.png" width={126} height={74.16}/></div>
 				
 				</div>
 				<div id="guide-bottom" className="max-h-[25px] min-h-[25px]"/>

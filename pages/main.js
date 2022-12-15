@@ -53,7 +53,11 @@ export default function Main(){
         setUser(JSON.parse(window.sessionStorage.user));
         setUsertoken(JSON.parse(window.sessionStorage.token));
         setSolvedNum(JSON.parse(window.sessionStorage.solvecount));
-        realWreath(JSON.parse(window.sessionStorage.token))
+        realWreath(JSON.parse(window.sessionStorage.token));
+        if(JSON.parse(window.sessionStorage.solvecount) == 10) {
+          setShowVM_Modal(true)
+          setSolvedNum(JSON.parse(window.sessionStorage.solvecount)+10)
+        }
       } else {
         window.sessionStorage.clear();
         router.push('/');
@@ -61,6 +65,15 @@ export default function Main(){
       }
     }
   },[console.log(usertoken)])
+
+  //video
+  function popVideo() {
+    if(solvedNum >= 10) {
+      setShowVM_Modal(true);
+    } else {
+      alert("🎄크리스마스까지 기다려 주세요🎄")
+    }
+  }
 
   /* 로그아웃 */
   const logoutHandler = () => {
@@ -186,7 +199,7 @@ export default function Main(){
   useEffect(() => {
     var today = new Date();
     /* 테스트 원하는 경우 목표 날짜 수정후 확인 */
-    var dDay = new Date(2022,11,15);
+    var dDay = new Date(2022,11,16);
     var gap = dDay.getTime() - today.getTime();
     var result = Math.ceil(gap / (1000 * 60 * 60 * 24));
     if(result <0 ) result = 0;
@@ -328,19 +341,6 @@ export default function Main(){
   })
   const removeQ7 = useCallback(() => {
     setRemoveWhat(7);
-  })
-
-  //video
-  function popVideo() {
-    if(user.solve_count >= 10) {
-      setShowVM_Modal(true)
-    }
-  }
-  useEffect(() => {
-    if(user.solve_count == 10) {
-      setShowVM_Modal(true)
-      user.solve_count = user.solve_count + 10
-    }
   })
 
   const [refinedData, setRefinedData] = useState([]);

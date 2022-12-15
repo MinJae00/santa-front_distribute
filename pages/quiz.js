@@ -71,7 +71,7 @@ export default function quiz(){
     if(typeof window !== 'undefined') {
       var today = new Date();
       /* 테스트 원하는 경우 목표 날짜 수정후 확인 */
-      var dDay = new Date(2022,11,14);
+      var dDay = new Date(2022,11,16);
       var gap = dDay.getTime() - today.getTime();
       var result = Math.ceil(gap / (1000 * 60 * 60 * 24));
       if(result <0 ) result = 0;

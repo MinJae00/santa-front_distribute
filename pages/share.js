@@ -73,9 +73,19 @@ export default function share(){
     });
     console.log("socks1 결과 =======");
     var datajson = res.data;
-    console.log(datajson);
-    setSock1Data(datajson);
-    return setShowS1_Modal(true);
+    if(datajson.url=="null" && datajson.name=="null"){
+      const tmp = {
+        url : null,
+        name : null,
+      }
+      console.log(tmp);
+      setSock1Data(tmp);
+      return setShowS1_Modal(true);
+    }else{
+      console.log(datajson);
+      setSock1Data(datajson);
+      return setShowS1_Modal(true);
+    }
   }
 
   /* 양말2 데이터 불러오기(button 클릭 실행) */
@@ -89,9 +99,19 @@ export default function share(){
     });
     console.log("socks2 결과 =======");
     var datajson = res.data;
-    console.log(datajson);
-    setSock2Data(datajson);
-    return setShowS2_Modal(true);
+    if(datajson.url=="null" && datajson.name=="null"){
+      const tmp = {
+        url : null,
+        name : null,
+      }
+      console.log(tmp);
+      setSock2Data(tmp);
+      return setShowS2_Modal(true);
+    }else{
+      console.log(datajson);
+      setSock2Data(datajson);
+      return setShowS2_Modal(true);
+    }
   }
 
   /* 양말3 데이터 불러오기(button 클릭 실행) */
@@ -106,8 +126,19 @@ export default function share(){
     console.log("socks3 결과 =======");
     var datajson = res.data;
     console.log(datajson);
-    setSock3Data(datajson);
-    return setShowS3_Modal(true);
+    if(datajson.url=="null" && datajson.name=="null"){
+      const tmp = {
+        url : null,
+        name : null,
+      }
+      console.log(tmp);
+      setSock3Data(tmp);
+      return setShowS3_Modal(true);
+    }else{
+      console.log(datajson);
+      setSock3Data(datajson);
+      return setShowS3_Modal(true);
+    }
   }
 
   /* 시작화면으로 돌아가기 */
