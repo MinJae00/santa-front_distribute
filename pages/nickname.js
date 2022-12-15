@@ -41,7 +41,7 @@ export default function setName() {
     console.log(token);
     if(!nicknameInput_t) return alert("닉네임을 입력해주세요");
     else {
-      let res = await axios.post(BASE_URL+"changenickname/",
+      let res = await axios.post(process.env.NEXT_PUBLIC_MY_BACK+"changenickname/",
         {
           nickname:nicknameInput_t,
           jwt:token,
@@ -68,7 +68,7 @@ export default function setName() {
       flex flex-col items-center h-screen
       overflow-auto bg-auto bg-center bg-local pt-[54px]
       bg-[url('../public/img/start_bg.png')]
-    ">
+    " onContextMenu={e => e.preventDefault()}>
       <Head>
         <title>돌아와 순록!</title>
         <meta name="description" content="콘텐트 내용" />

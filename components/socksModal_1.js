@@ -5,24 +5,11 @@ import { Modal, Link } from "@nextui-org/react";
 import AWS from "aws-sdk"
 import axios from 'axios';
 
-/*
-=== 양말 모달 동작 로직 정리 ===
-1. usertoken으로 백엔드에 get(post)요청 - usertoken, SOCK_NUM을 주고 URL과 WISHNAME을 받아와 STATE에 저장한다. 
-		input value는 언제나 WISHNAME
-		1) O -> 이미지 src로 URL
-		2) X -> 이미지 src가 null임을 판별하고 아래부분 렌더링 시킴
-						<div className="absolute text-[#791818] top-[36%]">
-							<h1 className="font-medium text-[40px]">+</h1>
-						</div>
-2. 미리보기 업로드
-3. 저장하기 버튼 클릭시 s3 버킷에 이미지 업로드 / 백엔드에 이미지 url, name, SOCK_NUM post 해주기
-*/
-
 /* 
 sockData 에는 name과 url 키 있음 
 */
 const SOCK_NUM = 1;
-const BASE_URL = "http://localhost:8000/"
+const BASE_URL = process.env.NEXT_PUBLIC_MY_BACK;
 
 const SocksModal_1 = ({ isVisible, onClose, nickname, usertoken, sockData }) => {
 	if(!isVisible) return null;
@@ -45,6 +32,7 @@ const SocksModal_1 = ({ isVisible, onClose, nickname, usertoken, sockData }) => 
     imageInput.current.click();
   };
   const encodeFileToBase64 = (fileBlob) => {
+		if(fileBlob == undefined) return;  
     console.log(fileBlob);
     console.log(fileBlob.name)
 		setT_file(fileBlob)
@@ -65,29 +53,16 @@ const SocksModal_1 = ({ isVisible, onClose, nickname, usertoken, sockData }) => 
 		onClose();
 	}	
 
-  /* 저장 후 닫기 button 눌렸을때 실행 */
   const handleFileInput = (fileBlob , name) => {
-		// 파일 등록 O => 원래 S3 버킷에 있던 파일 삭제후 등록해야함 !!
-		// 근데 만약 첫 파일 등록이면? 그럼 파일 삭제부분을 건너뛰어야지.....
     if(fileBlob !== null && name !== null){
-			if( sockData.url !== null) {
-				// S3버킷에 존재하는 기존 파일 삭제
-				const deleteImg = new AWS.S3().deleteObject(
-					{
-						Bucket: "advent-reindeer-test",
-						Key: sockData.url,
-					}
-				)
-				const promis_d = deleteImg.promis()
-				promis_d.then(
-					function(data){
-						alert("이미지 삭제 성공")
-					},
-					function(err){
-						return elert("이미지 삭제 실패", err.message)
-					}
-				)
-			}
+			// if( sockData.url !== null) {
+			// 	AWS.S3.deleteObject(
+			// 		{
+			// 			Bucket: "advent-reindeer-test",
+			// 			Key: t_key,
+			// 		}
+			// 	).promise();
+			// }
 			// S3버킷에 파일 업로드
       const file = fileBlob
 			const t_filetype = file.type
@@ -114,7 +89,7 @@ const SocksModal_1 = ({ isVisible, onClose, nickname, usertoken, sockData }) => 
 					});
 					console.log(res.data)
 					onClose()
-					alert("이미지 업로드에 성공했습니다.")
+					//alert("이미지 업로드에 성공했습니다.")
 				},
 				function (err) {
 					return alert(err.message)
@@ -128,7 +103,7 @@ const SocksModal_1 = ({ isVisible, onClose, nickname, usertoken, sockData }) => 
   }
 
 	return (
-		<div>
+		<div  onContextMenu={e => e.preventDefault()}>
 		<Modal css={{background:"transparent",}} noPadding open={isVisible} onClose={onCloseHandler} preventClose width={335} height={624} animated={false}>
 			<div className="inset-0 bg-opacity-75 flex justify-center items-center z-0 overflow-scroll bg-cover bg-scroll h-[684px] w-[335px]">
 				<div className="socks_back">
@@ -141,15 +116,15 @@ const SocksModal_1 = ({ isVisible, onClose, nickname, usertoken, sockData }) => 
 						<div className="socks_center">
 							<div id="none_box_1" className="socks_edit_noneBox">
 								<div className="absolute text-[#791818] top-[36%]">
-									<h1 className="font-medium text-[40px]">+</h1>
+									{sockData.url==null && imageSrc==null?<div className="font-medium text-[40px]">+</div>: null}
 								</div>
-								{imageSrc && <img src={imageSrc} alt="preview-img"/>}
+								{imageSrc && <img className="rounded-2xl max-w-[214px] max-h-[194px]" src={imageSrc} alt="preview-img"/>}
 							</div>	
 							<div id="upload" className="absolute top-[113%] w-[62px] h-[21px] flex justify-center z-0 rounded-full text-[11px] bg-[#EF3939]"
-									onClick={ ()=>{onCickImageUpload()}}
+									onClick={ ()=>{onCickImageUpload()}} 
 							>
 								<input type="file" onChange = {(e)=>{encodeFileToBase64(e.target.files[0])}}
-											ref={imageInput} style={{ display: "none" }}
+											ref={imageInput} style={{ display: "none" }} accept="image/gif, image/jpeg, image/png"
 								/>
 								<div className="absolute text-white top-[16%]">
 									<div className="font-bold text-[11px]">사진등록</div>

@@ -13,7 +13,7 @@
     width: 332px;
     height: 414px;
     display: flex;
-    background-color: #D63E3E;
+    background-color: #E17070;
     position: absolute;
     justify-content: center;
     z-index: 0;
@@ -22,9 +22,9 @@
 
 .wreath_edit_orna_group {
     width: 297px;
-    height: 312px;
+    height: 340px;
     display: flex;
-    background-color: #E17070;
+    background-color: #D63E3E;
     position: absolute;
     justify-content: center;
     z-index: 0;
@@ -48,10 +48,65 @@
     width: 83px;
     height: 86px;
     display: flex;
-    background-color: #A33333;
+    background-color: #E17070;
     justify-content: center;
     z-index: 0;
     border-radius: 11px;
+}
+
+.no_ornament {
+    position: absolute;
+    width: 240px;
+    height: 230px;
+    left: 43px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.no_ornament2 {
+    position: absolute;
+    width: 240px;
+    height: 320px;
+    left: 65px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.wreath_edit_save {
+    position: absolute;
+    width: 62px;
+    height: 21px;
+    left: 118px;
+    top: 306px;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 10.5px;
+}
+
+.wreath_edit_saveText {
+    position: absolute;
+    text-align: center;
+    left: 9px;
+    top: 5px;
+    font-family: 'ELAND Choice';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12px;
+    color: #FFFFFF;
 }
 
 .wreath_head {

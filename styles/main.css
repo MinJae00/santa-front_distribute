@@ -131,3 +131,39 @@
 	grid-template-columns: 20px 271px;
 	grid-template-rows: 33px 33px 33px 33px;
 }
+
+.orna-q1 {
+    position: absolute;
+    top: 213px;
+    left: 49px;
+}
+.orna-q2 {
+    position: absolute;
+    top: 173px;
+    left: 125px;
+}
+.orna-q3 {
+    position: absolute;
+    top: 213px;
+    left: 199px;
+}
+.orna-q4 {
+    position: absolute;
+    top: 283px;
+    left: 219px;
+}
+.orna-q5 {
+    position: absolute;
+    top: 353px;
+    left: 174px;
+}
+.orna-q6 {
+    position: absolute;
+    top: 353px;
+    left: 84px;
+}
+.orna-q7 {
+    position: absolute;
+    top: 283px;
+    left: 39px;
+}

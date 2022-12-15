@@ -27,6 +27,13 @@
 	font-family: 'ELAND_Choice_M';
     font-weight: normal;
     border-style: none;
+    -webkit-touch-callout: none;
+    user-select: none;
+    -ms-user-select: none; 
+	-moz-user-select: none;
+	-webkit-user-select: none; 
+	-khtml-user-select: none; 
+	user-select:none; 
 }
 
 div {
@@ -35,6 +42,18 @@ div {
 }
 div::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera*/
+}
+
+Image{
+    -webkit-tap-highlight-color:transparent;
+}
+
+a{
+    -webkit-tap-highlight-color:transparent;
+}
+
+img{
+    -webkit-tap-highlight-color:transparent;
 }
 
 input:focus {

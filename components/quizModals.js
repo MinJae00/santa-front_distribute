@@ -7,7 +7,7 @@ const QuizModal = ({ isVisible, onClose, usertoken }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-75 
-                    flex flex-col justify-center items-center z-0">
+                    flex flex-col justify-center items-center z-0"  onContextMenu={e => e.preventDefault()}>
       <div className="wrapper mb-8">
         <div className="lid one"></div>
         <div className="lid two"></div>

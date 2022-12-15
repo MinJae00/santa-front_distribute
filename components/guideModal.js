@@ -7,7 +7,7 @@ const guideModal = ({ isVisible, onClose }) => {
   if(!isVisible) return null;
 
   return (
-    <div>
+    <div onContextMenu={e => e.preventDefault()}>
 		<Modal css={{background:"transparent",}} width="320px" noPadding open={isVisible} onClose={onClose} animated={false}>
 			<div className="flex flex-col justify-items-center items-center h-[692px] w-[320px] overflow-scroll bg-cover bg-scroll
 											bg-[url('../public/img/guide/guide_bg.png')]">

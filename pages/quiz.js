@@ -74,6 +74,7 @@ export default function quiz(){
       var dDay = new Date(2022,11,14);
       var gap = dDay.getTime() - today.getTime();
       var result = Math.ceil(gap / (1000 * 60 * 60 * 24));
+      if(result <0 ) result = 0;
 
       const params = new URLSearchParams(location.search);
       const t_paramvalue = params.get("value");
@@ -85,6 +86,7 @@ export default function quiz(){
       // user key가 session에 존재하고, url value와 token이 동일하고, 퀴즈가 남아있는 경우만 접근 허용
       if(t_windowGet !== null && t_paramvalue == JSON.parse(window.sessionStorage.token)){
         const t_testNum = JSON.parse(window.sessionStorage.solvecount) + result
+        console.log(t_testNum);
         if( t_testNum < 10 ){
           setUser(JSON.parse(window.sessionStorage.user));
           setUsertoken(JSON.parse(window.sessionStorage.token));
@@ -147,7 +149,7 @@ export default function quiz(){
     if (quizInput_t == answerResult && typeof window !== 'undefined') {
       // 정답 
       /* 백엔드 서버로 solvedQuiz 갯수 증가 */
-      axios.post(BASE_URL+"solvequestion/",
+      axios.post(process.env.NEXT_PUBLIC_MY_BACK+"solvequestion/",
       {
         jwt:usertoken,
         src:'/img/ornaments/'+ t_solvedNum +'.png'
@@ -173,7 +175,7 @@ export default function quiz(){
         window.sessionStorage.solvecount = JSON.stringify(t_solvedNum)
         console.log(window.sessionStorage)
       }
-    } else {
+    }else{
       // 오답 
       document.getElementById('quiz_view_t').classList.remove('block');
       document.getElementById('quiz_view_t').classList.add('hidden');
@@ -185,7 +187,7 @@ export default function quiz(){
   /* 순록 모달ON 버튼 클릭시 */
   const [deerData, setDeerData] = useState();
   async function getDeer(){
-    let res = await axios.get(BASE_URL+"deer/", {
+    let res = await axios.get(process.env.NEXT_PUBLIC_MY_BACK+"deer/", {
       params: {
         jwt:usertoken
       },
@@ -202,7 +204,7 @@ export default function quiz(){
         flex flex-col h-screen relative
         overflow-auto bg-cover bg-local
         bg-[url('../public/img/wood_pattern_dark.png')]
-    ">
+    " onContextMenu={e => e.preventDefault()}>
         <Head>
           <title>돌아와! 순록!</title>
           <meta name="description" content="콘텐트 내용" />

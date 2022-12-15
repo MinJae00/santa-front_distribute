@@ -10,7 +10,7 @@ const ReindeerModal = ({ isVisible, onRClose, usertoken, nickname, solvedNum, de
   if(!isVisible) return null;
 
   return (
-    <div>
+    <div  onContextMenu={e => e.preventDefault()}>
     <Modal css={{background:"transparent"}} noPadding open={isVisible} preventClose onClose={onRClose} width={300} height={563} animated={false}>
       <Modal.Header className="flex flex-col items-center text-center w-full" css={{ position: "absolute", zIndex: "$1"}}>
         <div className="flex flex-col items-center text-center">
