@@ -156,10 +156,10 @@ export default function quiz(){
       })
       .then(res => {
         setSolvedNum(res.data.solve_count);
-        console.log(res);
+        console.log(res.data);
       })
       .catch(res => {
-        console.log(res);
+        console.log(res.data);
       });
       document.getElementById('quiz_view_f').classList.remove('block');
       document.getElementById('quiz_view_f').classList.add('hidden');
