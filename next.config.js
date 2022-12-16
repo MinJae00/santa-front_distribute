@@ -19,7 +19,7 @@ module.exports = {
     return [
       {
         source: "/:path*",
-        destination: "http://3.39.27.62:8000/:path*",
+        destination: 'http://3.39.27.62:8000/:path*',
       },
     ];
   },
