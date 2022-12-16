@@ -27,7 +27,7 @@ export default function Home() {
       params: {
         code:authObj.access_token
       },
-    }, {withCredentials: true});
+    }, );
     console.log("백서버에서 받아온 사용자 정보 =======");
     var datajson = res.data;
     console.log(datajson);
