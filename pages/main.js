@@ -17,7 +17,7 @@ import SocksModal_3 from '../components/socksModal_3'
 import { WreathEditModal } from '../components/wreathEditModal'
 import VideoModal from '../components/videoModal'
 
-const SHARE_URL = "https://comeback-reindeer/"
+const SHARE_URL = "http://3.38.235.135/"  // 우리거 도메인
 const BASE_URL = "http://localhost:8000/"  
 const DEFAULT_IMG = "/img/ornaments/orna_none.png"
 
@@ -69,9 +69,9 @@ export default function Main(){
   //video
   function popVideo() {
     if(solvedNum >= 10) {
-      setShowVM_Modal(true);
+      return setShowVM_Modal(true);
     } else {
-      alert("🎄크리스마스까지 기다려 주세요🎄")
+      return alert("🎄크리스마스까지 기다려 주세요🎄")
     }
   }
 
@@ -110,19 +110,9 @@ export default function Main(){
     });
     console.log("socks1 결과 =======");
     var datajson = res.data;
-    if(datajson.url=="null" && datajson.name=="null"){
-      const tmp = {
-        url : null,
-        name : null,
-      }
-      console.log(tmp);
-      setSock1Data(tmp);
-      return setShowS1_Modal(true);
-    }else{
-      console.log(datajson);
-      setSock1Data(datajson);
-      return setShowS1_Modal(true);
-    }
+    console.log(datajson);
+    setSock1Data(datajson);
+    return setShowS1_Modal(true);
   }
 
   /* 양말2 데이터 불러오기(button 클릭 실행) */
@@ -136,19 +126,9 @@ export default function Main(){
     });
     console.log("socks2 결과 =======");
     var datajson = res.data;
-    if(datajson.url=="null" && datajson.name=="null"){
-      const tmp = {
-        url : null,
-        name : null,
-      }
-      console.log(tmp);
-      setSock2Data(tmp);
-      return setShowS2_Modal(true);
-    }else{
-      console.log(datajson);
-      setSock2Data(datajson);
-      return setShowS2_Modal(true);
-    }
+    console.log(datajson);
+    setSock2Data(datajson);
+    return setShowS2_Modal(true);
   }
 
   /* 양말3 데이터 불러오기(button 클릭 실행) */
@@ -162,19 +142,9 @@ export default function Main(){
     });
     console.log("socks3 결과 =======");
     var datajson = res.data;
-    if(datajson.url=="null" && datajson.name=="null"){
-      const tmp = {
-        url : null,
-        name : null,
-      }
-      console.log(tmp);
-      setSock3Data(tmp);
-      return setShowS3_Modal(true);
-    }else{
-      console.log(datajson);
-      setSock3Data(datajson);
-      return setShowS3_Modal(true);
-    }
+    console.log(datajson);
+    setSock3Data(datajson);
+    return setShowS3_Modal(true);
   }
 
   /* 링크복사 */

@@ -16,6 +16,10 @@ class MyDocument extends Document {
       <Html>
         <Head >
           {CssBaseline.flush()}
+          <meta 
+            httpEquiv="Content-Security-Policy" 
+            content="upgrade-insecure-requests" 
+          />
         </Head>
         <body >
           <Main />
