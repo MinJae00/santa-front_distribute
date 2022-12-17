@@ -21,15 +21,15 @@
 }
 
 .wreath_edit_orna_group {
-    width: 297px;
-    height: 340px;
+    width: 230px;
+    height: 350px;
     display: flex;
     background-color: #D63E3E;
     position: absolute;
     justify-content: center;
     z-index: 0;
     border-radius: 12px;
-    padding: 20px;
+    padding-top: 9px;
 }
 
 .wreath_edit_center {
@@ -45,8 +45,8 @@
 }
 
 .wreath_edit_orna_box {
-    width: 83px;
-    height: 86px;
+    width: 65px;
+    height: 68px;
     display: flex;
     background-color: #E17070;
     justify-content: center;
@@ -58,11 +58,12 @@
     position: absolute;
     width: 240px;
     height: 230px;
-    left: 43px;
+    top: -20px;
+    left: 23px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 18px;
     display: flex;
     align-items: center;
@@ -74,11 +75,12 @@
     position: absolute;
     width: 240px;
     height: 320px;
-    left: 65px;
+    top: -20px;
+    left: 45px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 18px;
     display: flex;
     align-items: center;
@@ -90,8 +92,9 @@
     position: absolute;
     width: 62px;
     height: 21px;
-    left: 118px;
-    top: 306px;
+    left: 84px;
+    top: 316px;
+    margin-bottom: 10px;
     background: rgba(255, 255, 255, 0.24);
     border-radius: 10.5px;
 }
