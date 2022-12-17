@@ -484,7 +484,7 @@ export default function Main(){
                 <Popover>
                     <Popover.Trigger>
                         <button id = "qimg" className="wreath_orna_q1" onClick={()=>{removeQ1(); Ornament();}}>
-                            <Image src={(wreathSrc == '') ? NULL_IMG : wreathSrc } width='60' height='60'></Image>
+                            <Image src={wreathSrc ? ((wreathSrc == '') ? NULL_IMG : wreathSrc) : NULL_IMG } width='60' height='60'></Image>
                         </button>
                     </Popover.Trigger> 
                     <Popover.Content>
@@ -505,7 +505,7 @@ export default function Main(){
                 <Popover>
                     <Popover.Trigger>
                         <button id = "qimg2" className="wreath_orna_q2" onClick={()=>{removeQ2();Ornament();}}>
-                            <Image src={(wreathSrc2 == '') ? NULL_IMG : wreathSrc2} width='60' height='60'></Image>
+                            <Image src={wreathSrc2 ? ((wreathSrc2 == '') ? NULL_IMG : wreathSrc2) : NULL_IMG } width='60' height='60'></Image>
                         </button>
                     </Popover.Trigger> 
                     <Popover.Content>
@@ -526,7 +526,7 @@ export default function Main(){
                 <Popover>
                     <Popover.Trigger>
                         <button id = "qimg3" className="wreath_orna_q3" onClick={()=>{removeQ3(); Ornament();}}>
-                            <Image src={(wreathSrc3 == '') ? NULL_IMG : wreathSrc3} width='60' height='60'></Image>
+                            <Image src={wreathSrc3 ? ((wreathSrc3 == '') ? NULL_IMG : wreathSrc3) : NULL_IMG } width='60' height='60'></Image>
                         </button>
                     </Popover.Trigger> 
                     <Popover.Content>
@@ -547,7 +547,7 @@ export default function Main(){
                 <Popover>
                     <Popover.Trigger>
                         <button id = "qimg4" className="wreath_orna_q4" onClick={()=>{removeQ4();Ornament();}}>
-                            <Image src={(wreathSrc4 == '') ? NULL_IMG : wreathSrc4} width='60' height='60'></Image>
+                            <Image src={wreathSrc4 ? ((wreathSrc4 == '') ? NULL_IMG : wreathSrc4) : NULL_IMG } width='60' height='60'></Image>
                         </button>
                     </Popover.Trigger> 
                     <Popover.Content>
@@ -568,7 +568,7 @@ export default function Main(){
                 <Popover>
                     <Popover.Trigger>
                         <button id = "qimg5" className="wreath_orna_q5" onClick={()=>{removeQ5();Ornament();}}>
-                            <Image src={(wreathSrc5 == '') ? NULL_IMG : wreathSrc5} width='60' height='60'></Image>
+                            <Image src={wreathSrc5 ? ((wreathSrc5 == '') ? NULL_IMG : wreathSrc5) : NULL_IMG } width='60' height='60'></Image>
                         </button>
                     </Popover.Trigger> 
                     <Popover.Content>
@@ -589,7 +589,7 @@ export default function Main(){
                 <Popover>
                     <Popover.Trigger>
                         <button id = "qimg6" className="wreath_orna_q6" onClick={()=>{removeQ6();Ornament();}}>
-                            <Image src={(wreathSrc6 == '') ? NULL_IMG : wreathSrc6} width='60' height='60'></Image>
+                            <Image src={wreathSrc6 ? ((wreathSrc6 == '') ? NULL_IMG : wreathSrc6) : NULL_IMG } width='60' height='60'></Image>
                         </button>
                     </Popover.Trigger> 
                     <Popover.Content>
@@ -610,7 +610,7 @@ export default function Main(){
                 <Popover>
                     <Popover.Trigger>
                         <button id = "qimg7" className="wreath_orna_q7" onClick={()=>{removeQ7();Ornament();}}>
-                            <Image src={(wreathSrc7 == '') ? NULL_IMG : wreathSrc7} width='60' height='60'></Image>
+                            <Image src={wreathSrc7 ? ((wreathSrc7 == '') ? NULL_IMG : wreathSrc7) : NULL_IMG } width='60' height='60'></Image>
                         </button>
                     </Popover.Trigger> 
                     <Popover.Content>
