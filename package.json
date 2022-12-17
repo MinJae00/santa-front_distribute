@@ -23,6 +23,7 @@
     "react-dom": "^18.2.0",
     "react-howler": "^5.2.0",
     "react-modal": "^3.16.1",
+    "sharp": "^0.31.2",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
