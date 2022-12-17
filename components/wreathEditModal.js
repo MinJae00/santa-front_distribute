@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const BASE_URL = process.env.NEXT_PUBLIC_MY_BACK
 
-export const WreathEditModal = ({ getData, removeQ, usertoken, refinedData, index }) => {
+export const WreathEditModal = ({ getData, removeQ, usertoken, refinedData, index, onClose }) => {
 
     const [isSelect, setIsSelect] = useState([]);
 
@@ -54,42 +54,35 @@ export const WreathEditModal = ({ getData, removeQ, usertoken, refinedData, inde
     })
 
     return (
-        <Grid.Container
-            css={{ borderRadius: "13px", minWidth: "230px", minHeight: "230px" }}  onContextMenu={e => e.preventDefault()}>
-            <Grid>
-                <div className="wreath_edit_orna_group overflow-scroll">
-                    <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-4 gap-2">
-                        {(refinedData.length != 0) ? refinedData.map((el,index) =>
-                        <div id="ornaBox" className="wreath_edit_orna_box" key={index}>
-                            <button onClick={() => {
-                                onClickHandler(el);
-                                console.log("click");
-                                removeQ()
-                            }} 
-                            className="py-1.5">
-                                <Image src={el} width='54' height='54'/>
-                            </button>
-                        </div>
-                        ) :
-                        <div>
-                            <p className="no_ornament">매일 도착하는 새로운 퀴즈를 풀고</p>
-                            <p className="no_ornament2">오너먼트를 획득해보세요!</p>
-                        </div>    
-                        }
-                        {/* <div className="mt-10 mb-10">
-                            <button onClick={()=>{wreathPost()}} className="wreath_edit_save col-span-3">
-                                <div className="wreath_edit_saveText">변경저장</div>
-                            </button>
-                        </div> */}
-                    </div>
-                    <div className="mt-10 mb-10">
-                            <button onClick={()=>{wreathPost()}} className="wreath_edit_save col-span-3">
-                                <div className="wreath_edit_saveText">변경저장</div>
-                            </button>
-                        </div>
+        <div className="flex flex-col items-center rounded-xl min-h-[230px] min-w-[230px] max-h-[230px] max-w-[230px] bg-[#D63E3E] pt-[8px]" onContextMenu={e => e.preventDefault()}>
+            <div className="grid grid-flow-row-dense grid-cols-3 gap-2 overflow-y-scroll min-h-[180px] max-h-[180px]">
+                {(refinedData.length != 0) ? refinedData.map((el,index) =>
+                <div id="ornaBox" className="wreath_edit_orna_box" key={index}>
+                    <button onClick={() => {
+                        onClickHandler(el);
+                        console.log("click");
+                        removeQ()
+                    }} 
+                    className="py-1.5">
+                        <Image src={el} width='54' height='54'/>
+                    </button>
                 </div>
-            </Grid>
-        </Grid.Container>
+                ) :
+                <div className="w-[230px] text-center text-white text-[13px] font-normal pt-[74px]">
+                    <div className="">매일 도착하는 새로운 퀴즈를 풀고</div>
+                    <div className="pt-[10px]">오너먼트를 획득해보세요!</div>
+                </div> 
+                }
+                {/* <div className="mt-10 mb-10">
+                    <button onClick={()=>{wreathPost()}} className="wreath_edit_save col-span-3">
+                        <div className="wreath_edit_saveText">변경저장</div>
+                    </button>
+                </div> */}
+            </div>
+            <button onClick={()=>{wreathPost()}} className="mt-[10px] px-[10px] py-[2px] rounded-xl mt-10px bg-white/[0.24] text-white text-[11px]">
+                변경저장
+            </button>
+        </div>
     );
 };
 
