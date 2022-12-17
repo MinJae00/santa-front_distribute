@@ -71,7 +71,7 @@ export default function quiz(){
     if(typeof window !== 'undefined') {
       var today = new Date();
       /* 테스트 원하는 경우 목표 날짜 수정후 확인 */
-      var dDay = new Date(2022,11,16);
+      var dDay = new Date(2022,11,17);
       var gap = dDay.getTime() - today.getTime();
       var result = Math.ceil(gap / (1000 * 60 * 60 * 24));
       if(result <0 ) result = 0;
@@ -231,7 +231,7 @@ export default function quiz(){
           </div>
         </div>
         <div className="flex letter-wrapper mt-10">
-          <Image className=" w-full max-x-md absolute" src='/img/quiz_back.png' width='430' height='639'/>
+          <Image className=" w-full max-x-md absolute" src='/img/quiz_back.png' priority width='430' height='639'/>
           <div className="flex flex-col letter-text1 px-5 relative ">
             <div className="flex text-rose-800 mb-3 max-[374px]:text-xs max-[374px]:mb-0.5 max-[374px]:mt-8">~ 오늘의 퀴즈 ~</div>
             <div id="quiz" className="flex text-base max-[374px]:text-sm">{quizdata ? quizdata.question: null}</div>
