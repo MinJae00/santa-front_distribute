@@ -231,7 +231,7 @@ export default function quiz(){
           </div>
         </div>
         <div className="flex letter-wrapper mt-10">
-          <Image className=" w-full max-x-md absolute" src='/img/quiz_back.png' priority width='430' height='639'/>
+          <Image className=" w-full max-x-md absolute" src='/img/quiz_back.webp' priority width='430' height='639'/>
           <div className="flex flex-col letter-text1 px-5 relative ">
             <div className="flex text-rose-800 mb-3 max-[374px]:text-xs max-[374px]:mb-0.5 max-[374px]:mt-8">~ 오늘의 퀴즈 ~</div>
             <div id="quiz" className="flex text-base max-[374px]:text-sm">{quizdata ? quizdata.question: null}</div>
