@@ -53,7 +53,7 @@ const ReindeerCollectionModal = ({ isVisible, onClose, nickname , deerData }) =>
 								<div className="top-[10%] left-[29%] absolute drop-shadow-xl"><Image src={v.m_horn} priority width={44} height={25} onError={(e) => (e.currentTarget.src = fallBackSrc)}/></div>
 								<div className="top-[28%] left-[21%] absolute drop-shadow-xl"><Image src={v.m_body_color} priority width={62} height={71} onError={(e) => (e.currentTarget.src = fallBackSrc)}/></div>
 								<div className="top-[59%] left-[30%] absolute"><Image src={v.m_body_deco} priority width={44} height={20} onError={(e) => (e.currentTarget.src = fallBackSrc)}/></div>
-								<div className="top-[42.5%] left-[38.8%] absolute"><Image src={v.m_eye} priority width={25} height={6} onError={(e) => (e.currentTarget.src = fallBackSrc)}/></div>
+								<div className="top-[33%] left-[38.8%] absolute"><Image src={v.m_eye} priority width={25} height={6} onError={(e) => (e.currentTarget.src = fallBackSrc)}/></div>
 								<div className="top-[22%] left-[29.5%] absolute"><Image src={v.m_hair} priority width={46} height={20} onError={(e) => (e.currentTarget.src = fallBackSrc)}/></div>
 							</div>
 						</div>
