@@ -54,16 +54,10 @@ const SocksModal_1 = ({ isVisible, onClose, nickname, usertoken, sockData }) => 
 	}	
 
   const handleFileInput = (fileBlob , name) => {
-    if(fileBlob !== null && name !== null){
-			// if( sockData.url !== null) {
-			// 	AWS.S3.deleteObject(
-			// 		{
-			// 			Bucket: "advent-reindeer-test",
-			// 			Key: t_key,
-			// 		}
-			// 	).promise();
-			// }
+    if(fileBlob !== undefined && name !== null && fileBlob !== null){
 			// S3버킷에 파일 업로드
+			console.log(fileBlob);
+			console.log(name);
       const file = fileBlob
 			const t_filetype = file.type
       const t_filename = usertoken + file.name
@@ -96,9 +90,12 @@ const SocksModal_1 = ({ isVisible, onClose, nickname, usertoken, sockData }) => 
 				}
 			)
     }
-		// 파일, 이름 등록 X
+		// 파일, 이름 변화 X
+		else if (imageSrc, giftName) {
+			return alert("이미지와 이름을 모두 변경해주세요!")
+		}
 		else {
-			return alert("이미지와 이름을 모두 채워주세요!")
+			return alert("이미지와 이름을 모두 변경해주세요!")
 		}
   }
 
