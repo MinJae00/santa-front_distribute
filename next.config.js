@@ -13,7 +13,8 @@ module.exports = withImages();
 module.exports = {
   reactStrictMode: false,
   images: {
-    domains: ["advent-reindeer-test.s3.ap-northeast-2.amazonaws.com", 'localhost']
+    domains: ["advent-reindeer-test.s3.ap-northeast-2.amazonaws.com", 'localhost'],
+    formats: ['image/webp'],
   },
   async rewrites() {
     return [

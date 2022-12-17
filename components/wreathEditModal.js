@@ -55,10 +55,10 @@ export const WreathEditModal = ({ getData, removeQ, usertoken, refinedData, inde
 
     return (
         <Grid.Container
-            css={{ borderRadius: "13px", minWidth: "297px", minHeight: "340px" }}  onContextMenu={e => e.preventDefault()}>
+            css={{ borderRadius: "13px", minWidth: "230px", minHeight: "230px" }}  onContextMenu={e => e.preventDefault()}>
             <Grid>
                 <div className="wreath_edit_orna_group overflow-scroll">
-                    <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-3 gap-2">
+                    <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-4 gap-2">
                         {(refinedData.length != 0) ? refinedData.map((el,index) =>
                         <div id="ornaBox" className="wreath_edit_orna_box" key={index}>
                             <button onClick={() => {
@@ -66,7 +66,7 @@ export const WreathEditModal = ({ getData, removeQ, usertoken, refinedData, inde
                                 console.log("click");
                                 removeQ()
                             }} 
-                            className="py-4">
+                            className="py-1.5">
                                 <Image src={el} width='54' height='54'/>
                             </button>
                         </div>
@@ -76,12 +76,17 @@ export const WreathEditModal = ({ getData, removeQ, usertoken, refinedData, inde
                             <p className="no_ornament2">오너먼트를 획득해보세요!</p>
                         </div>    
                         }
-                        <div className="mt-10 mb-10">
+                        {/* <div className="mt-10 mb-10">
+                            <button onClick={()=>{wreathPost()}} className="wreath_edit_save col-span-3">
+                                <div className="wreath_edit_saveText">변경저장</div>
+                            </button>
+                        </div> */}
+                    </div>
+                    <div className="mt-10 mb-10">
                             <button onClick={()=>{wreathPost()}} className="wreath_edit_save col-span-3">
                                 <div className="wreath_edit_saveText">변경저장</div>
                             </button>
                         </div>
-                    </div>
                 </div>
             </Grid>
         </Grid.Container>
