@@ -17,7 +17,7 @@ import SocksModal_3 from '../components/socksModal_3'
 import { WreathEditModal } from '../components/wreathEditModal'
 import VideoModal from '../components/videoModal'
 
-const SHARE_URL = "http://3.38.235.135/"  // 우리거 도메인
+const SHARE_URL = "http://www.comeback-reindeer.com/"  // 우리거 도메인
 const BASE_URL = "http://localhost:8000/"  
 const DEFAULT_IMG = "/img/ornaments/orna_none.png"
 const NULL_IMG = "/img/reindeer/null_callback.png"
