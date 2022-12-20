@@ -20,7 +20,7 @@ export default function quiz(){
         correct : '100',
         hints : 'https://www.bbc.com/korean/features-59777860',
     },{
-        question : '영국 감시단체는 오염으로 OOOOO 가까워진다고 경고하였다',
+        question : '영국 감시단체는 오염으로 OOOOO에 가까워진다고 경고하였다',
         correct : '회복불가능',
         hints : 'https://www.bbc.com/korean/news-61419228'
     }, {
